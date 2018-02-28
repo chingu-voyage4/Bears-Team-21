@@ -4,8 +4,8 @@
   "description": "[![Waffle.io - Columns and their card count](https://badge.waffle.io/chingu-voyage4/Bears-Team-21.png?columns=backlogNode)](https://waffle.io/chingu-voyage4/Bears-Team-21?utm_source=badge) # Bears-Team-21 Node.js + Socket.io",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha --recursive src/tests", // add babel here to use es7 in the tests
-    "dev": "nodemon -w src --exec \"babel-node src/server\"",
+    "test": "NODE_ENV=test mocha --recursive src/tests",
+    "dev": "nodemon -w src --exec \"babel-node src/index\"",
     "build": "babel src --ignore '/tests/' -s -D -d dist",
     "start": "node dist"
   },
@@ -28,8 +28,9 @@
     "should": "^13.2.1"
   },
   "babel": {
-    "preset": [
+    "presets": [
       "env"
-    ]
+    ],
+    "plugins": []
   }
 }
