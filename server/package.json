@@ -1,0 +1,35 @@
+{
+  "name": "game-server",
+  "version": "0.0.1",
+  "description": "[![Waffle.io - Columns and their card count](https://badge.waffle.io/chingu-voyage4/Bears-Team-21.png?columns=backlogNode)](https://waffle.io/chingu-voyage4/Bears-Team-21?utm_source=badge) # Bears-Team-21 Node.js + Socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --recursive src/tests", // add babel here to use es7 in the tests
+    "dev": "nodemon -w src --exec \"babel-node src/server\"",
+    "build": "babel src --ignore '/tests/' -s -D -d dist",
+    "start": "node dist"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "dotenv": "^5.0.1",
+    "eslint": "^4.18.1",
+    "mocha": "^5.0.1",
+    "should": "^13.2.1"
+  },
+  "babel": {
+    "preset": [
+      "env"
+    ]
+  }
+}
