@@ -7,7 +7,9 @@
     "test": "NODE_ENV=test mocha --recursive src/tests",
     "dev": "nodemon -w src --exec \"babel-node src/index\"",
     "build": "babel src --ignore '/tests/' -s -D -d dist",
-    "start": "node dist"
+    "start": "node dist",
+    "prestart": "npm run build && npm run client",
+    "client": "cd client && npm run build"
   },
   "author": "",
   "license": "MIT",
