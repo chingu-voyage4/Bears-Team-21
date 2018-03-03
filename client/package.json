@@ -12,6 +12,5 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }, 
-  "homepage": "https://chingu-voyage4.github.io/Bears-Team-21"
+  }
 }
