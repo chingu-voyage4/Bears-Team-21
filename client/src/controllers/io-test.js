@@ -1,5 +1,5 @@
 import openSocket from 'socket.io-client';
-const socket = openSocket('http://localhost:4444');
+const socket = openSocket(':4444');
 
 function subscribeToTimer () {
   socket.on('bazingatesttime', timestamp => {
