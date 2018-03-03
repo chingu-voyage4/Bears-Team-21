@@ -4,9 +4,9 @@ import router from './routes'
 const app = express()
 
 app.use(router)
-
-app.listen(3333, () => {
-  console.log('app listening on port 3333')
+const port = process.env.PORT || 3333
+app.listen(port, () => {
+  console.log('app listening on port ' + port)
 })
 
 app.use(express.static('client/build'))
