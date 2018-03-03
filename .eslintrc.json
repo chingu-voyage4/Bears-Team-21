@@ -1,0 +1,15 @@
+{
+  "extends": "standard",
+  "env": {
+      "mocha": true,
+      "es6": true
+  },
+  "rules": {
+      "no-unused-vars": [
+          "warn",
+          {
+              "varsIgnorePattern": "should|expect|assert|next|error|e|data|config"
+          }
+      ]
+  }
+}
